@@ -2,7 +2,7 @@ import React from 'react'
 
 const sample = () => {
   return (
-    <div>this is my experiment</div>
+    <div>this is my new conflict</div>
   )
 }
 
