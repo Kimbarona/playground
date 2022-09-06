@@ -1,0 +1,362 @@
+ 
+/* 1. flex-container *************************************************/
+/*
+.App {
+  text-align: center;
+}
+
+ .wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+}
+.box{
+  height: 100px;
+  min-width: 100px;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+} */
+
+
+
+/* 2. flex-grow *****************************************************/
+/*
+.App {
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+}
+.box{
+  height: 100px;
+  min-width: 100px;
+}
+.one {
+  background: red;
+  flex-grow: 1;
+}
+.two {
+  background: green;
+  flex-grow: 2;
+
+}
+.three {
+  background: blue;
+  flex-grow: 3;
+} */
+
+
+
+/* 3. flex-shrink ********************************************************/
+/*
+.App {
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+}
+.box{
+  height: 100px;
+  width: 320px;
+}
+.one {
+  background: red;
+  flex-shrink: 1;
+}
+.two {
+  background: green;
+  flex-shrink: 2;
+}
+.three {
+  background: blue;
+  flex-shrink: 3;
+} */
+
+
+
+/* 4. flex-wrap ************************************************ */
+/*
+.App {
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+ 
+}
+.box{
+  height: 100px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+} */
+
+
+
+
+/* 5. flex-basis or simply flex: 1 0 200px*******************************************************************/
+/*
+.App {
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.box{
+  height: 100px;
+  flex: 1 0 200px;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+} */
+
+
+
+
+/* flex-menu ******************************************************************/
+
+*{
+  font-family: roboto;
+  margin: 0;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+
+/* menu base styles */
+nav {
+  background: #333;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+nav a:hover{
+  background-color: #555;
+}
+
+/* social menu base style */
+a.fb{
+  background: url(../public/fb.png) no-repeat center;
+  background-size: 80%;
+}
+
+a.tw{
+  background: url(../public/twt.png) no-repeat center;
+  background-size: 80%;
+}
+
+.social a {
+  text-indent: -10000px;
+}
+
+.social{
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+nav ul.social li {
+  flex: 1 1 0;
+}
+
+/* flex styles */
+
+nav ul.social{
+  flex: 1 1 0;
+  display: flex;
+}
+
+@media screen and (min-width: 768px){
+  
+  nav ul {
+    display: flex;
+    /* justify-content:flex-start; */
+  }
+
+  nav li {
+    flex: 1 1 0;
+  }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social{
+      margin: 0;
+    }
+
+    #blocks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    article {
+      flex: 0 1 32%;
+      transition: flex-basis 0.2s linear;
+    }
+
+    article.stack{
+      flex: 0 1 100%;
+    }
+
+}
+
+
+
+/* flow and axis **********************************************************/
+/* .App {
+  text-align: center;
+} */
+
+/* .wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+} */
+
+/* .flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  height: 800px;
+
+}
+.box{
+  height: 100px;
+  flex: 0 0 100px;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+} */
+
+
+/* Grid and Stack layout **********************************************************/
+.layout{
+  margin: 20px;
+}
+
+
+#blocks {
+  margin: 20px;
+}
+
+article {
+  background: rgb(201, 200, 200);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+/* Element Oder ******************************************************/
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 800px;
+
+}
+.box{
+  height: 100px;
+  flex: 0 0 100px;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+}
+.four {
+  background-color: #555;
+}
